@@ -1,0 +1,25 @@
+.nav{
+    border:2px solid black;
+    background: #262626;
+    height: 4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+}
+
+.tittle{
+    color:white;
+}
+
+.lista{
+    border:2px solid red;
+    display: flex;
+    gap: 15px;
+}
+
+.item{
+    border:2px solid green;
+    padding: .5em 1.5em;
+    border-radius: 10px;
+}

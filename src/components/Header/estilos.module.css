@@ -1,0 +1,31 @@
+.header{
+    border:2px solid red;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+    background-image: url('./fondo.png');
+}
+
+.text{
+    border:2px solid green;
+    height: max-content;
+    color:white;
+    width: 40%;
+}
+.tittle{
+    background: #6BD1FF;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 1em;
+}
+
+.subtittle{
+    margin-bottom: .5em;
+}
+.description{
+    color: gray;
+}
