@@ -1,0 +1,12 @@
+.cards{
+    width: 100%;
+    padding: 0 2em;
+    background: red;
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    border:2px solid white;
+}
+

@@ -1,0 +1,58 @@
+{
+    "videos": [
+        {
+            "id": "1",
+            "equipo": "frontend",
+            "image": "front.png",
+            "url":""
+        },
+        {
+            "id": "2",
+            "equipo": "frontend",
+            "image": "front1.png",
+            "url":""
+        },
+        {
+            "id": "3",
+            "equipo": "frontend",
+            "image": "front2.png",
+            "url":""
+        },
+        {
+            "id": "4",
+            "equipo": "innovacion",
+            "image": "inv.png",
+            "url":""
+        },
+        {
+            "id": "5",
+            "equipo": "innovacion",
+            "image": "inv1.png",
+            "url":""
+        },
+        {
+            "id": "6",
+            "equipo": "innovacion",
+            "image": "inv2.png",
+            "url":""
+        },
+        {
+            "id": "7",
+            "equipo": "backend",
+            "image": "back.png",
+            "url":""
+        },
+        {
+            "id": "8",
+            "equipo": "backend",
+            "image": "back1.png",
+            "url":""
+        },
+        {
+            "id": "9",
+            "equipo": "backend",
+            "image": "back2.png",
+            "url":""
+        }
+    ]
+}

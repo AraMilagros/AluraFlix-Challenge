@@ -1,0 +1,13 @@
+.container{
+    border:2px solid red;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.images{
+    border:2px solid blue;
+
+}
