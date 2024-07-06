@@ -30,7 +30,6 @@ export default function index() {
                 const data = await response.json();
                 setVideos(data);
                 setDuplicado(data);
-                console.log(data);
             } catch (err) {
                 console.log("Error al obtener datos: ", err);
             }

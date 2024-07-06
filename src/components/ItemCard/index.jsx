@@ -12,7 +12,7 @@ export default function index(props) {
         <img src={images(`./${props.image}`)} alt='image.logo' />
       </div>
       <div className={estilos.btns}>
-        <a className={estilos.btn} href={props.url}>
+        <a className={estilos.btn}>
           <i className="fa-solid fa-trash"></i>
           BORRAR
         </a>

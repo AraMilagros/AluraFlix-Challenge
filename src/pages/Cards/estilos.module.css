@@ -1,12 +1,25 @@
 .cards{
     width: 100%;
     padding: 0 2em;
-    background: red;
+    /* background: red; */
 }
 
 .card{
     display: flex;
     flex-wrap: wrap;
+    gap:2em;
     border:2px solid white;
+}
+
+.frontend{
+    color:white;
+}
+
+.backend{
+    background: white;
+}
+
+.innovacion{
+    background: green;
 }
 

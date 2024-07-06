@@ -1,13 +1,30 @@
 .container{
     border:2px solid red;
-    padding: 2em;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: space-between; */
+    /* align-items:end; */
 }
 
 .images{
     border:2px solid blue;
+}
 
+.btns{
+    background: gray;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btn{
+    color: white;
+}
+
+.btn i{
+    margin-right: .7em;
 }
