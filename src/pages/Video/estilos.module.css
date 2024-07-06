@@ -1,3 +1,60 @@
 .container{
     border:2px solid red;
+    width: 100%;
+    padding: 4em 2em;
+
+}
+
+.tittle, .subTittle{
+    text-align: center;
+}
+
+.input__text{
+    border:2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario{
+    display: grid;
+    grid-template-areas: 'titulo categoria'
+                         'imagen video'
+                         'descripcion .'
+                         'btns .';
+
+    gap: 1em;
+    margin-top: 2em;
+}
+
+#input__titulo{ grid-area: titulo;}
+#input__categoria{ grid-area: categoria;}
+#input__imagen{ grid-area: imagen;}
+#input__video{ grid-area: video;}
+#input__descripcion{ grid-area: descripcion;}
+#input__btns{ 
+    grid-area: btns;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    width: max-content;
+    border: 2px solid red;
+}
+
+#input__btns input{
+    padding: .5em 2em;
+    border-radius: 8px;
+}
+
+input[type=text], select{
+    padding: .5em;
+    border-radius: 8px;
+}
+
+label{
+    margin-bottom: .5em;
+}
+
+textarea{
+    border-radius: 8px;
+    padding: .5em;
 }
