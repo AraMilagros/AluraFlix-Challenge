@@ -4,8 +4,8 @@ import estilos from './estilos.module.css';
 
 export default function index() {
   return (
-    <div className={estilos.footer}>
-        <p>Alura</p>
-    </div>
+    <section className={estilos.container}>
+        {children}
+    </section>
   )
 }
