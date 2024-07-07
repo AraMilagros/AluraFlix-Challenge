@@ -1,17 +1,16 @@
-import React from 'react'
-
-import NavBar from '../../components/Navbar';
+import Nav from "../../components/Navbar"
+import Contenedor from "../../components/Contenedor"
 import Footer from '../../components/Footer';
-import { Outlet } from 'react-router-dom';
+
+import { Outlet } from "react-router-dom"
 
 export default function index() {
   return (
     <main>
-        <NavBar />
-        {/* aqui podria ir context use  */}
-        <Container>
-            <Outlet />
-        </Container>
+        <Nav />
+        <Contenedor>
+          <Outlet/>
+        </Contenedor>
         <Footer />
     </main>
   )

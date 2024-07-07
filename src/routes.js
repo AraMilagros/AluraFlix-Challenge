@@ -1,4 +1,4 @@
-
+import PaginaBase from './pages/PaginaBase';
 import Principal from './pages/Principal';
 import Video from './pages/Video';
 import NotFound from './pages/NotFound';
