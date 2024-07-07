@@ -2,15 +2,15 @@ import React from 'react'
 
 import estilos from './estilos.module.css';
 
-//! poner en estilos.tittle(valorpsado) para los titulos de cards
 
 export default function index() {
   return (
     <div className={estilos.container}>
+        
         <h2 className={estilos.tittle}>NUEVO VIDEO</h2>
         <h4 className={estilos.subTittle}>COMPLETE EL FORMULARIO PARA CREAR UNA NUEVA TARJETA DE VIDEO</h4>
         <hr/>
-        <h3>Crear Tarjeta</h3>
+        <h3 className={estilos.tarjeta}>Crear Tarjeta</h3>
         <hr />
 
         <form className={estilos.formulario}>

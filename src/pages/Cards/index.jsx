@@ -4,11 +4,12 @@ import ItemCard from '../../components/ItemCard';
 
 export default function index(props) {
 
-  const { id, titulo } = props.datos;
+  const { id, titulo, color } = props.datos;
+  
 
   return (
     <div className={estilos.cards}>
-      <h3 className={ titulo }>{titulo}</h3>
+      <h3 style={{ background: color }} className={estilos.titulo}>{titulo}</h3>
       <div className={estilos.card}>
         {
           props.videos.map((item) => {

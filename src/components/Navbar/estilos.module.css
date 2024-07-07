@@ -13,13 +13,27 @@
 }
 
 .lista{
-    border:2px solid red;
     display: flex;
     gap: 15px;
 }
 
 .item{
-    border:2px solid green;
     padding: .5em 1.5em;
     border-radius: 10px;
+}
+
+.lista li:nth-child(1){
+    border:2px solid blue;
+    background: black;
+}
+.lista li:nth-child(2){
+    border:2px solid white;
+    background: black;
+}
+#home{
+    color:blue;
+    font-weight: 900;
+}
+#nuevo{
+    color: white;
 }

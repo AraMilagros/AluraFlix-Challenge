@@ -11,9 +11,9 @@ export default function App() {
     return (
         <> 
             <Nav />
-            {/* <Header />
-            <Principal /> */}
-            <Video />
+            <Header />
+            <Principal /> 
+            {/* <Video /> */}
         </>
     )
 }

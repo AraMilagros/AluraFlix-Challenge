@@ -1,12 +1,20 @@
 .container{
     border:2px solid red;
     width: 100%;
-    padding: 4em 2em;
+    padding: 4em 5em;
 
 }
 
 .tittle, .subTittle{
     text-align: center;
+}
+
+.subTittle{
+    margin-bottom: 3em;
+}
+
+.tarjeta{
+    margin: 1em 0;
 }
 
 .input__text{
@@ -22,7 +30,7 @@
                          'descripcion .'
                          'btns .';
 
-    gap: 1em;
+    gap: 2.5em;
     margin-top: 2em;
 }
 

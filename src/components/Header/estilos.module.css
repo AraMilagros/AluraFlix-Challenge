@@ -1,21 +1,5 @@
-.header{
-    border:2px solid red;
-    height: 90vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2em;
-    background-image: url('./fondo.png');
-}
-
-.text{
-    border:2px solid green;
-    height: max-content;
-    color:white;
-    width: 40%;
-}
 .tittle{
-    background: #6BD1FF;
+    background: #6BD1FF; 
     display: inline-block;
     padding: 10px 20px;
     border-radius: 10px;
@@ -23,9 +7,37 @@
     margin-bottom: 1em;
 }
 
-.subtittle{
-    margin-bottom: .5em;
+#image{
+    height: 90vh;
+    max-width: 100%;
+    position: relative;
+    background-image: url('./fondo.png');
 }
+
+#container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(6, 56, 222, 0.3);
+
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    align-items: center;
+    padding: 0 2em;
+}
+
+.text{
+    color: white;
+    width: 45%;
+}
+
+.subtittle{
+    margin-bottom: 1em;
+}
+
 .description{
     color: gray;
 }

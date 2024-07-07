@@ -9,14 +9,17 @@ export default function index() {
         {
             id: "front1",
             titulo: "frontend",
+            color: "#6BD1FF"
         },
         {
             id: "back2",
             titulo: "backend",
+            color: "#3ebcb0"
         },
         {
             id: "innov3",
             titulo: "innovacion",
+            color: "#f2b308"
         }
     ]);
 
