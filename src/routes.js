@@ -10,7 +10,7 @@ export default function AppRoutes(){
             <Routes>
                 <Route path="/" element={ <PaginaBase/> }>
                     {/* aqui iran las demas paginas */}
-                    <Route path="home" element={ <Principal /> }/>
+                    <Route path="" element={ <Principal /> }/>
                     <Route path="newVideo" element={ <Video/> } />
                     <Route path='*' element={ <NotFound/> } />
                 </Route>

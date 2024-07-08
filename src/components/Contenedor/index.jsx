@@ -1,7 +1,7 @@
-import estilos from './estilos.module.css';
+// import estilos from './estilos.module.css';
 
 function Contenedor({ children }) {
-  return <section className={estilos.container}>{children}</section>;
+  return <section>{children}</section>;
 }
 
 export default Contenedor;
