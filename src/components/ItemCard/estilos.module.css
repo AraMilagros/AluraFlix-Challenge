@@ -6,7 +6,12 @@
 }
 
 .images{
-    border:2px solid blue;
+    width: 450px;
+    height: 281px;
+}
+
+.images img{
+    width: 100%;
 }
 
 .btns{

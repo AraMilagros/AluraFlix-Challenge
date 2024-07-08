@@ -7,8 +7,8 @@ export default function index() {
     <div className={estilos.nav}>
         <span className={estilos.tittle} >ALURAFLIX</span>
         <ul className={estilos.lista}>
-          <li className={estilos.item}><a href="#" id={estilos.home}>HOME</a></li>
-          <li className={estilos.item}><a href="#" id={estilos.nuevo}>NUEVO VIDEO</a></li>
+          <li className={estilos.item}><a href="/" id={estilos.home}>HOME</a></li>
+          <li className={estilos.item}><a href="/newVideo" id={estilos.nuevo}>NUEVO VIDEO</a></li>
         </ul>
     </div>
   )

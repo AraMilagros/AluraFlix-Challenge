@@ -4,7 +4,7 @@ import ItemCard from '../../components/ItemCard';
 
 export default function index(props) {
 
-  const { id, titulo, color } = props.datos;
+  const { titulo, color } = props.datos;
   
 
   return (
@@ -14,10 +14,12 @@ export default function index(props) {
         {
           props.videos.map((item) => {
             return (
-              <ItemCard key={Math.random()}
+              <ItemCard key={item.id}
+                id={item.id}
                 equipo={props.datos.titulo}
                 image={item.image}
-                url={item.url}
+                urlVideo={item.url}
+
               />
             )
           })

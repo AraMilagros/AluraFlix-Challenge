@@ -6,25 +6,27 @@ const images = require.context(`../../assets/img`, true);
 
 export default function index(props) {
 
-  const {video, editVideo} = useVideoContext();
+  const { deleteVideo, editVideo } = useVideoContext();
 
-  const mensaje = () => {
-    console.log("desde ITEMCARD");
-    console.log(video)
-    editVideo();
+
+  const editarVideo = () => {
+    console.log("Aqui se llamara el modal para editar");
   }
-
+  
   return (
+    //! aqui encerrar el segundo div de la linea 19 en un <a></a> con props.urlVideo 
     <div className={estilos.container}>
       <div className={estilos.images}>
         <img src={images(`./${props.image}`)} alt='image.logo' />
       </div>
       <div className={estilos.btns}>
-        <a className={estilos.btn} onClick={mensaje}>
+        <a className={estilos.btn}
+          onClick={()=>deleteVideo(props.id)}>
           <i className="fa-solid fa-trash"></i>
           BORRAR
         </a>
-        <a className={estilos.btn}>
+        <a className={estilos.btn}
+          onClick={()=>editarVideo()}>
           <i className="fa-solid fa-pen-to-square"></i>
           EDITAR
         </a>

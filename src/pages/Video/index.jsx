@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 import estilos from './estilos.module.css';
 import { useVideoContext } from '../../context/VideosContexto';
@@ -6,49 +6,76 @@ import { useVideoContext } from '../../context/VideosContexto';
 export default function index() {
 
     const {addVideo} = useVideoContext();
+    const [titulo, setTitulo] = useState();
+    const [categoria, setCategoria] = useState();
+    const [imagen, setImagen] = useState();
+    const [video, setVideo] = useState();
+    const [descripcion, setDescripcion] = useState();
 
-    const formulario = () =>{
-        console.log("desde FORMULARIO VIDEO");
-        addVideo();
+    
+    const enviar = (e) => {
+        e.preventDefault();
+        addVideo({
+            titulo: titulo,
+            categoria: categoria,
+            imagen: imagen,
+            video: video,
+            descripcion: descripcion
+        });
     }
+
+    useEffect(()=>{
+        const select = document.getElementById('categoria');
+        select.addEventListener('change', ()=>{
+            console.log(select.value)
+            setCategoria(select.value);
+        })
+        
+    },[]);
+
     return (
         <div className={estilos.container}>
 
-            <h2 className={estilos.tittle} onClick={formulario} >NUEVO VIDEO</h2>
+            <h2 className={estilos.tittle}>NUEVO VIDEO</h2>
             <h4 className={estilos.subTittle}>COMPLETE EL FORMULARIO PARA CREAR UNA NUEVA TARJETA DE VIDEO</h4>
             <hr />
             <h3 className={estilos.tarjeta}>Crear Tarjeta</h3>
             <hr />
 
-            <form className={estilos.formulario}>
+            <form className={estilos.formulario} onSubmit={enviar}>
                 <div className={estilos.input__text} id={estilos.input__titulo}>
                     <label>Titulo</label>
-                    <input type="text" placeholder='Ingrese el título' />
+                    <input type="text" placeholder='Ingrese el título'
+                        onChange={(e) => setTitulo(e.target.value)} />
                 </div>
 
                 <div className={estilos.input__text} id={estilos.input__categoria}>
                     <label>Categoría</label>
-                    <select>
+                    <select name="categoria" id="categoria">
                         <option id="seleccion">Seleccione una categoria</option>
-                        <option id="frontend">Frontend</option>
-                        <option id="backend">Backend</option>
-                        <option id="innovacion">Innovación</option>
+                        <option id="frontend" value="frontend">Frontend</option>
+                        <option id="backend" value="backend">Backend</option>
+                        <option id="innovacion" value="innovacion">Innovación</option>
                     </select>
                 </div>
 
                 <div className={estilos.input__text} id={estilos.input__imagen}>
                     <label>Imagen</label>
-                    <input type="text" placeholder='Ingrese enlace de la imagen' />
+                    <input type="text" placeholder='Ingrese enlace de la imagen'
+                        onChange={(e) => setImagen(e.target.value)}/>
                 </div>
 
                 <div className={estilos.input__text} id={estilos.input__video}>
                     <label>Video</label>
-                    <input type="text" placeholder='Ingrese el enlace del video' />
+                    <input type="text" placeholder='Ingrese el enlace del video'
+                        onChange={(e)=>setVideo(e.target.value)}
+                    />
                 </div>
 
                 <div className={estilos.input__text} id={estilos.input__descripcion}>
                     <label>Descripción</label>
-                    <textarea rows={5} placeholder='¿De qué trata este video?'></textarea>
+                    <textarea rows={5} placeholder='¿De qué trata este video?'
+                        onChange={(e)=>setDescripcion(e.target.value)}></textarea>
                 </div>
 
                 <div className={estilos.input__text} id={estilos.input__btns}>
