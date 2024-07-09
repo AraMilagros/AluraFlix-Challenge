@@ -2,81 +2,75 @@
   "videos": [
     {
       "id": "1",
-      "titulo": "tiutlo1",
-      "categoira": "frontend",
-      "image": "https://i.ibb.co/QbFdRMD/girl-perfil.png",
-      "video": "",
-      "descripcion": "descripcion descripcion"
+      "titulo": "Cuando usar variables",
+      "categoria": "frontend",
+      "imagen": "https://i.ibb.co/nMmsf6h/front2.png",
+      "video": "https://www.youtube.com/watch?v=PztCEdIJITY",
+      "descripcion": "Sabrás la diferencia entre let, var y const"
+    },
+    {
+      "id": "2",
+      "titulo": "¿Qué es Javascript?",
+      "categoria": "frontend",
+      "imagen": "https://i.ibb.co/CwZ91Vs/front.png",
+      "video": "https://www.youtube.com/watch?v=GJfOSoaXk4s",
+      "descripcion": "Los principios de javascript y principales usos"
+    },
+    {
+      "id": "3",
+      "titulo": "Equipo Frontend",
+      "categoria": "frontend",
+      "imagen": "https://i.ibb.co/XkZSRXf/front1.png",
+      "video": "https://www.youtube.com/watch?v=rpvrLaBQwgg",
+      "descripcion": "Sabrás las principales funciones de un equipo frontend"
     },
     {
       "id": "4",
-      "titulo": "titulo2",
-      "categoria": "innovacion",
-      "image": "https://i.ibb.co/QbFdRMD/girl-perfil.png",
-      "video": "",
-      "descripcion": "descripcion descripcion"
+      "titulo": "Spring",
+      "categoria": "backend",
+      "imagen": "https://i.ibb.co/JR8WDBK/back2.png",
+      "video": "https://www.youtube.com/watch?v=t-iqt1b2qqk",
+      "descripcion": "¿Conoce Spring Framework? Spring es el framework más usado de Java"
     },
     {
       "id": "5",
-      "titulo": "titulo3",
-      "categoria": "frontend",
-      "image": "https://i.ibb.co/QbFdRMD/girl-perfil.png",
-      "video": "https://i.ibb.co/QbFdRMD/girl-perfil.png",
-      "descripcion": "descripcion descripcion"
+      "titulo": "Bases de datos",
+      "categoria": "backend",
+      "imagen": "https://i.ibb.co/yd0P5XR/back.png",
+      "video": "https://www.youtube.com/watch?v=cLLKVd5CNLc",
+      "descripcion": "Diferencias entre una base de datos relacional y no relacional"
+    },
+    {
+      "id": "6",
+      "titulo": "Java: Enum",
+      "categoria": "backend",
+      "imagen": "https://i.ibb.co/wQRVvsg/back1.png",
+      "video": "https://www.youtube.com/watch?v=EoPvlE85XAQ",
+      "descripcion": "Descrubre un nuevo tipo de dato: enum"
     },
     {
       "id": "7",
-      "titulo": "titulo452",
-      "categoria": "backend",
-      "image": "https://i.ibb.co/QbFdRMD/girl-perfil.png",
-      "video": "",
-      "descripcion": "descripcion descripcion"
-    },
-    {
-      "id": "0.5200980389639824",
-      "titulo": "titulo21",
-      "categoira": "innovacion",
-      "image": "https://i.ibb.co/fqR6M2h/img3.png",
-      "video": "https://i.ibb.co/fqR6M2h/img3.png",
-      "descripcion": "descripcion para probar crear uno item"
-    },
-    {
-      "id": "0.4189091628263022",
-      "titulo": "sdafasfas",
-      "categoira": "backend",
-      "image": "https://i.ibb.co/fqR6M2h/img3.png",
-      "video": "https://i.ibb.co/fqR6M2h/img3.png",
-      "descripcion": "ksjdnaksfmalsgkma"
-    },
-    {
-      "id": "0.3029630176534419",
-      "categoria": "backend",
-      "image": "https://i.ibb.co/QbFdRMD/girl-perfil.png",
-      "video": "https://i.ibb.co/QbFdRMD/girl-perfil.png"
-    },
-    {
-      "id": "0.9481732440382993",
+      "titulo": "¿Soft kills?",
       "categoria": "innovacion",
-      "image": "https://i.ibb.co/QbFdRMD/girl-perfil.png",
-      "video": "https://i.ibb.co/QbFdRMD/girl-perfil.png"
+      "imagen": "https://i.ibb.co/6ZSJKn5/inv2.png",
+      "video": "https://www.youtube.com/watch?v=vhwspfvI52k",
+      "descripcion": "La importancia de las softkill en el ámbito laboral"
     },
     {
-      "id": "0.3967611615807749",
-      "categoria": "frontend",
-      "image": "https://i.ibb.co/QbFdRMD/girl-perfil.png",
-      "video": "https://i.ibb.co/QbFdRMD/girl-perfil.png"
+      "id": "8",
+      "titulo": "7 principales softkill",
+      "categoria": "innovacion",
+      "imagen": "https://i.ibb.co/j6yMmDR/inv.png",
+      "video": "https://www.youtube.com/watch?v=YhR7Zp8NUzE",
+      "descripcion": "¿Cuáles son las 7 softkill más deseadas?"
     },
     {
-      "id": "0.6013347568624692",
-      "categoria": "frontend",
-      "image": "https://i.ibb.co/QbFdRMD/girl-perfil.png",
-      "video": "https://i.ibb.co/QbFdRMD/girl-perfil.png"
-    },
-    {
-      "id": "0.5570027520229546",
-      "categoria": "frontend",
-      "image": "https://i.ibb.co/QbFdRMD/girl-perfil.png",
-      "video": "https://i.ibb.co/QbFdRMD/girl-perfil.png"
+      "id": "9",
+      "titulo": "Metodologías agiles",
+      "categoria": "innovacion",
+      "imagen": "https://i.ibb.co/r667mC2/inv1.png",
+      "video": "https://www.youtube.com/watch?v=6N3OkLCfK-0",
+      "descripcion": "Descubre qué son y cuán importantes son"
     }
   ]
 }

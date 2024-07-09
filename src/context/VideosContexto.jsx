@@ -1,5 +1,4 @@
 import { createContext, useContext, useState, useEffect } from "react";
-
 export const VideosContext = createContext();
 
 VideosContext.displayName = 'VideosContexto';
@@ -52,8 +51,8 @@ export function useVideoContext() {
                     id: Math.random().toString(),
                     titulo: item.titulo,
                     categoria: item.categoria,
-                    image: item.imagen,
-                    video: item.imagen,
+                    imagen: item.imagen,
+                    video: item.video,
                     descripcion: item.descripcion
                 })
             })
@@ -62,7 +61,6 @@ export function useVideoContext() {
         }catch(err){
             console.log("error en crear nuevo video "+err)
         }
-
     };
 
     async function editVideo(item) {
@@ -78,8 +76,8 @@ export function useVideoContext() {
                     id: item.id,
                     titulo: item.titulo,
                     categoria: item.categoria,
-                    image: item.imagen,
-                    video: item.imagen,
+                    imagen: item.imagen,
+                    video: item.video,
                     descripcion: item.descripcion
                 }),
             });

@@ -5,36 +5,44 @@ export default function index(props) {
 
     const [titulo, setTitulo] = useState(props.datos.titulo);
     const [categoria, setCategoria] = useState(props.datos.categoria);
-    const [imagen, setImagen] = useState(props.datos.image);
+    const [imagen, setImagen] = useState(props.datos.imagen);
     const [video, setVideo] = useState(props.datos.video);
     const [descripcion, setDescripcion] = useState(props.datos.descripcion);
 
     useEffect(() => {
         let selec = document.getElementById('categoria');
         selec.value = props.datos.categoria;
-        // console.log(addVideo)
-    })
+    },[])
 
     useEffect(()=>{
         const select = document.getElementById('categoria');
         select.addEventListener('change', ()=>{
-            console.log(select.value)
+            // console.log(select.value)
             setCategoria(select.value);
+            select.style.border=`2px solid white`;
+            select.style.color='white';
         })
         
     },[]);
 
     const enviar = () => {
-        props.actualizar({
-            id: props.datos.id,
-            titulo: titulo,
-            categoria: categoria,
-            imagen: imagen,
-            video: video,
-            descripcion: descripcion
-        });
-    }
 
+        const selec = document.getElementById('categoria');
+        if (selec.value !== 'seleccion') {
+            props.actualizar({
+                id: props.datos.id,
+                titulo: titulo,
+                categoria: categoria,
+                imagen: imagen,
+                video: video,
+                descripcion: descripcion
+            });
+        } else {
+            console.log("falta elegir categoria");
+            selec.style.border=`2px solid red`;
+            selec.style.color='red';
+        }
+    }
 
     return (
         <>
@@ -53,9 +61,9 @@ export default function index(props) {
                     </div>
 
                     <div className={estilos.input__text} id={estilos.input__categoria}>
-                        <label>Categoría</label>
+                       <label>Categoría</label>
                         <select name="categoria" id="categoria">
-                            <option id="seleccion">Seleccione una categoria</option>
+                            <option id="seleccion" value="seleccion">Seleccione una categoria</option>
                             <option id="frontend" value="frontend">Frontend</option>
                             <option id="backend" value="backend">Backend</option>
                             <option id="innovacion" value="innovacion">Innovación</option>
@@ -65,7 +73,7 @@ export default function index(props) {
                     <div className={estilos.input__text} id={estilos.input__imagen}>
                         <label>Imagen</label>
                         <input type="text"
-                            placeholder={props.datos.image}
+                            placeholder={props.datos.imagen}
                             onChange={(e) => setImagen(e.target.value)} />
                     </div>
 

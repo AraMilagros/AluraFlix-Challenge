@@ -23,6 +23,7 @@
     width: max-content;
     height: max-content;
     border: 2px solid #2373d2;
+    z-index: 100000;
 }
 
 h1{
@@ -101,4 +102,11 @@ textarea{
     background: transparent;
     border: 2px solid white;
     color: white;
+}
+
+@media (max-width: 389px) {
+    .dialogo{
+        padding: 2em 1em;
+        margin: auto;
+    }
 }
