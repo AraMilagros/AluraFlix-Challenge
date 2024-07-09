@@ -13,7 +13,9 @@
 
 .titulo{
     display: inline-block;
-    padding: 1em 10em;
+    padding: 1em;
+    text-align: center;
     border-radius: 10px;
     color: white;
+    width: 450px;
 }

@@ -17,7 +17,8 @@ export default function index(props) {
     //! aqui encerrar el segundo div de la linea 19 en un <a></a> con props.urlVideo 
     <div className={estilos.container}>
       <div className={estilos.images}>
-        <img src={images(`./${props.image}`)} alt='image.logo' />
+        {/* <img src={images(`./${props.image}`)} alt='image.logo' /> */}
+        <img src={props.image} alt='image.logo' />
       </div>
       <div className={estilos.btns}>
         <a className={estilos.btn}
@@ -26,7 +27,7 @@ export default function index(props) {
           BORRAR
         </a>
         <a className={estilos.btn}
-          onClick={()=>editarVideo()}>
+          onClick={()=>editVideo()}>
           <i className="fa-solid fa-pen-to-square"></i>
           EDITAR
         </a>

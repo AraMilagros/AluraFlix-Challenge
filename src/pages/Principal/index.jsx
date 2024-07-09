@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 
 import Cards from '../Cards';
 import estilos from './estilos.module.css';
-
+import { useVideoContext } from '../../context/VideosContexto';
 export default function index() {
 
     const [equipos, actualizarEquipos] = useState([
@@ -23,22 +23,7 @@ export default function index() {
         }
     ]);
 
-    const [videos, setVideos] = useState([]);
-    const [duplicado, setDuplicado] = useState([]);
-
-    useEffect(() => {
-        const conexionApi = async () => {
-            try {
-                const response = await fetch("http://localhost:3000/videos");
-                const data = await response.json();
-                setVideos(data);
-                setDuplicado(data);
-            } catch (err) {
-                console.log("Error al obtener datos: ", err);
-            }
-        };
-        conexionApi();
-    }, []);
+    const {listaVideo, setListaVideo} = useVideoContext();
 
     return (
         <div className={estilos.contenedorCards}>{
@@ -47,7 +32,7 @@ export default function index() {
                     <Cards
                         datos={equipo}
                         key={equipo.titulo}
-                        videos={videos.filter(vid => vid.equipo === equipo.titulo)}
+                        videos={listaVideo.filter(video => video.categoria === equipo.titulo)}
                     />
                 )
             })

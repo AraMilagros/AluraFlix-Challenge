@@ -3,82 +3,58 @@
     {
       "id": "1",
       "titulo": "",
-      "equipo": "frontend",
-      "image": "front.png",
-      "video": "",
-      "descripcion": "descripcion descripcion"
-    },
-    {
-      "id": "2",
-      "titulo": "",
-      "equipo": "frontend",
-      "image": "front1.png",
-      "video": "",
-      "descripcion": "descripcion descripcion"
-    },
-    {
-      "id": "3",
-      "titulo": "",
-      "equipo": "frontend",
-      "image": "front2.png",
+      "categoira": "frontend",
+      "image": "https://i.ibb.co/QbFdRMD/girl-perfil.png",
       "video": "",
       "descripcion": "descripcion descripcion"
     },
     {
       "id": "4",
       "titulo": "",
-      "equipo": "innovacion",
-      "image": "inv.png",
+      "categoria": "innovacion",
+      "image": "https://i.ibb.co/QbFdRMD/girl-perfil.png",
       "video": "",
       "descripcion": "descripcion descripcion"
     },
     {
       "id": "5",
       "titulo": "",
-      "equipo": "innovacion",
-      "image": "inv1.png",
-      "video": "",
-      "descripcion": "descripcion descripcion"
-    },
-    {
-      "id": "6",
-      "titulo": "",
-      "equipo": "innovacion",
-      "image": "inv2.png",
+      "categoria": "innovacion",
+      "image": "https://i.ibb.co/QbFdRMD/girl-perfil.png",
       "video": "",
       "descripcion": "descripcion descripcion"
     },
     {
       "id": "7",
       "titulo": "",
-      "equipo": "backend",
-      "image": "back.png",
-      "video": "",
-      "descripcion": "descripcion descripcion"
-    },
-    {
-      "id": "8",
-      "titulo": "",
-      "equipo": "backend",
-      "image": "back1.png",
+      "categoria": "backend",
+      "image": "https://i.ibb.co/QbFdRMD/girl-perfil.png",
       "video": "",
       "descripcion": "descripcion descripcion"
     },
     {
       "id": "9",
       "titulo": "",
-      "equipo": "backend",
-      "image": "back2.png",
+      "categoria": "backend",
+      "image": "https://i.ibb.co/QbFdRMD/girl-perfil.png",
       "video": "",
       "descripcion": "descripcion descripcion"
     },
     {
-      "id": "0.10907631047617983",
-      "titulo": "titulo",
-      "categoria": "frontend",
-      "imagen": "https://i.ibb.co/QbFdRMD/girl-perfil.png",
-      "video": "",
-      "descripcion": "descripcion descripcion"
+      "id": "0.5200980389639824",
+      "titulo": "titulo1",
+      "categoira": "innovacion",
+      "image": "https://i.ibb.co/fqR6M2h/img3.png",
+      "video": "https://i.ibb.co/fqR6M2h/img3.png",
+      "descripcion": "descripcion para probar crear uno item"
+    },
+    {
+      "id": "0.4189091628263022",
+      "titulo": "sdafasfas",
+      "categoira": "backend",
+      "image": "https://i.ibb.co/fqR6M2h/img3.png",
+      "video": "https://i.ibb.co/fqR6M2h/img3.png",
+      "descripcion": "ksjdnaksfmalsgkma"
     }
   ]
 }

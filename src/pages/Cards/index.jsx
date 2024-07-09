@@ -16,7 +16,7 @@ export default function index(props) {
             return (
               <ItemCard key={item.id}
                 id={item.id}
-                equipo={props.datos.titulo}
+                categoria={props.datos.titulo}
                 image={item.image}
                 urlVideo={item.url}
 
