@@ -19,7 +19,7 @@ export default function index(props) {
                 categoria={props.datos.titulo}
                 image={item.image}
                 urlVideo={item.url}
-
+                datos={item}
               />
             )
           })

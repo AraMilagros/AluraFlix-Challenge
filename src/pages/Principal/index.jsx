@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react'
 import Cards from '../Cards';
 import estilos from './estilos.module.css';
 import { useVideoContext } from '../../context/VideosContexto';
+import Dialogo from '../../components/DialogEdit';
 export default function index() {
 
     const [equipos, actualizarEquipos] = useState([
@@ -22,8 +23,8 @@ export default function index() {
             color: "#f2b308"
         }
     ]);
-
-    const {listaVideo, setListaVideo} = useVideoContext();
+    const [bandera, setBandera] = useState(false);
+    const { listaVideo, setListaVideo } = useVideoContext();
 
     return (
         <div className={estilos.contenedorCards}>{
@@ -34,6 +35,7 @@ export default function index() {
                         key={equipo.titulo}
                         videos={listaVideo.filter(video => video.categoria === equipo.titulo)}
                     />
+
                 )
             })
         }</div>

@@ -2,6 +2,7 @@ import PaginaBase from './pages/PaginaBase';
 import Principal from './pages/Principal';
 import Video from './pages/Video';
 import NotFound from './pages/NotFound';
+
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 export default function AppRoutes(){

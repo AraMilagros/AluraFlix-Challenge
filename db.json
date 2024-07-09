@@ -2,7 +2,7 @@
   "videos": [
     {
       "id": "1",
-      "titulo": "",
+      "titulo": "tiutlo1",
       "categoira": "frontend",
       "image": "https://i.ibb.co/QbFdRMD/girl-perfil.png",
       "video": "",
@@ -10,7 +10,7 @@
     },
     {
       "id": "4",
-      "titulo": "",
+      "titulo": "titulo2",
       "categoria": "innovacion",
       "image": "https://i.ibb.co/QbFdRMD/girl-perfil.png",
       "video": "",
@@ -18,7 +18,7 @@
     },
     {
       "id": "5",
-      "titulo": "",
+      "titulo": "titulo3",
       "categoria": "innovacion",
       "image": "https://i.ibb.co/QbFdRMD/girl-perfil.png",
       "video": "",
@@ -26,15 +26,7 @@
     },
     {
       "id": "7",
-      "titulo": "",
-      "categoria": "backend",
-      "image": "https://i.ibb.co/QbFdRMD/girl-perfil.png",
-      "video": "",
-      "descripcion": "descripcion descripcion"
-    },
-    {
-      "id": "9",
-      "titulo": "",
+      "titulo": "titulo452",
       "categoria": "backend",
       "image": "https://i.ibb.co/QbFdRMD/girl-perfil.png",
       "video": "",
@@ -42,7 +34,7 @@
     },
     {
       "id": "0.5200980389639824",
-      "titulo": "titulo1",
+      "titulo": "titulo21",
       "categoira": "innovacion",
       "image": "https://i.ibb.co/fqR6M2h/img3.png",
       "video": "https://i.ibb.co/fqR6M2h/img3.png",

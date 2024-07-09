@@ -2,20 +2,23 @@ import React, { useState, useEffect } from 'react'
 
 import estilos from './estilos.module.css';
 import { useVideoContext } from '../../context/VideosContexto';
-const images = require.context(`../../assets/img`, true);
+// const images = require.context(`../../assets/img`, true);
+import Dialogo from '../DialogEdit';
 
 export default function index(props) {
 
   const { deleteVideo, editVideo } = useVideoContext();
 
+  const [openModal, setOpenModal] = useState(false);
 
   const editarVideo = () => {
     console.log("Aqui se llamara el modal para editar");
   }
+
   
   return (
-    //! aqui encerrar el segundo div de la linea 19 en un <a></a> con props.urlVideo 
-    <div className={estilos.container}>
+    <>
+      <div className={estilos.container}>
       <div className={estilos.images}>
         {/* <img src={images(`./${props.image}`)} alt='image.logo' /> */}
         <img src={props.image} alt='image.logo' />
@@ -27,11 +30,13 @@ export default function index(props) {
           BORRAR
         </a>
         <a className={estilos.btn}
-          onClick={()=>editVideo()}>
+          onClick={()=>setOpenModal(true)}>
           <i className="fa-solid fa-pen-to-square"></i>
           EDITAR
         </a>
       </div>
     </div>
+    {openModal && <Dialogo closeModal={setOpenModal} datos={props.datos} />}
+    </>
   )
 }
