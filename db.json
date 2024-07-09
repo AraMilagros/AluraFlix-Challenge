@@ -19,9 +19,9 @@
     {
       "id": "5",
       "titulo": "titulo3",
-      "categoria": "innovacion",
+      "categoria": "frontend",
       "image": "https://i.ibb.co/QbFdRMD/girl-perfil.png",
-      "video": "",
+      "video": "https://i.ibb.co/QbFdRMD/girl-perfil.png",
       "descripcion": "descripcion descripcion"
     },
     {
@@ -47,6 +47,14 @@
       "image": "https://i.ibb.co/fqR6M2h/img3.png",
       "video": "https://i.ibb.co/fqR6M2h/img3.png",
       "descripcion": "ksjdnaksfmalsgkma"
+    },
+    {
+      "id": "0.5724668151473813",
+      "titulo": "nueov",
+      "categoria": "frontend",
+      "image": "https://i.ibb.co/GHzwtL8/img2.png",
+      "video": "https://i.ibb.co/GHzwtL8/img2.png",
+      "descripcion": "el sirviente del mal"
     }
   ]
 }

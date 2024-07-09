@@ -1,11 +1,41 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import estilos from './estilos.module.css';
 
 export default function index(props) {
+
+    const [titulo, setTitulo] = useState(props.datos.titulo);
+    const [categoria, setCategoria] = useState(props.datos.categoria);
+    const [imagen, setImagen] = useState(props.datos.image);
+    const [video, setVideo] = useState(props.datos.video);
+    const [descripcion, setDescripcion] = useState(props.datos.descripcion);
+
     useEffect(() => {
         let selec = document.getElementById('categoria');
         selec.value = props.datos.categoria;
+        // console.log(addVideo)
     })
+
+    useEffect(()=>{
+        const select = document.getElementById('categoria');
+        select.addEventListener('change', ()=>{
+            console.log(select.value)
+            setCategoria(select.value);
+        })
+        
+    },[]);
+
+    const enviar = () => {
+        props.actualizar({
+            id: props.datos.id,
+            titulo: titulo,
+            categoria: categoria,
+            imagen: imagen,
+            video: video,
+            descripcion: descripcion
+        });
+    }
+
+
     return (
         <>
             <div className={estilos.overlay}></div>
@@ -13,12 +43,12 @@ export default function index(props) {
                 <i className="icon-x fa-regular fa-circle-xmark"
                     onClick={() => { props.closeModal(false) }}></i>
                 <h1>EDITAR CARD:</h1>
-                <form className={estilos.formulario}>
+                <form method='dialog' className={estilos.formulario}>
                     <div className={estilos.input__text} id={estilos.input__titulo}>
                         <label>Titulo</label>
-                        <input type="text" placeholder='Ingrese el título'
+                        <input type="text"
                             onChange={(e) => setTitulo(e.target.value)}
-                            value={props.datos.titulo}
+                            placeholder={props.datos.titulo}
                         />
                     </div>
 
@@ -34,28 +64,28 @@ export default function index(props) {
 
                     <div className={estilos.input__text} id={estilos.input__imagen}>
                         <label>Imagen</label>
-                        <input type="text" placeholder='Ingrese enlace de la imagen'
-                            value={props.datos.image}
+                        <input type="text"
+                            placeholder={props.datos.image}
                             onChange={(e) => setImagen(e.target.value)} />
                     </div>
 
                     <div className={estilos.input__text} id={estilos.input__video}>
                         <label>Video</label>
-                        <input type="text" placeholder='Ingrese el enlace del video'
-                            value={props.datos.video}
+                        <input type="text"
+                            placeholder={props.datos.video}
                             onChange={(e) => setVideo(e.target.value)}
                         />
                     </div>
 
                     <div className={estilos.input__text} id={estilos.input__descripcion}>
                         <label>Descripción</label>
-                        <textarea rows={5} placeholder='¿De qué trata este video?'
-                            value={props.datos.descripcion}
+                        <textarea rows={5}
+                            placeholder={props.datos.descripcion}
                             onChange={(e) => setDescripcion(e.target.value)}></textarea>
                     </div>
 
                     <div className={estilos.input__text} id={estilos.input__btns}>
-                        <input type="submit" value="GUARDAR" />
+                        <input type="button" onClick={enviar} value="GUARDAR"/>
                         <input type="button" value="LIMPIAR" />
                     </div>
                 </form>

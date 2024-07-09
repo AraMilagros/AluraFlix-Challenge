@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 
 import estilos from './estilos.module.css';
 import { useVideoContext } from '../../context/VideosContexto';
-// const images = require.context(`../../assets/img`, true);
 import Dialogo from '../DialogEdit';
 
 export default function index(props) {
@@ -10,12 +9,12 @@ export default function index(props) {
   const { deleteVideo, editVideo } = useVideoContext();
 
   const [openModal, setOpenModal] = useState(false);
-
-  const editarVideo = () => {
-    console.log("Aqui se llamara el modal para editar");
+  
+  const actualizarItem = (item) => {
+    editVideo(item);
+    // console.log(item);
   }
 
-  
   return (
     <>
       <div className={estilos.container}>
@@ -36,7 +35,7 @@ export default function index(props) {
         </a>
       </div>
     </div>
-    {openModal && <Dialogo closeModal={setOpenModal} datos={props.datos} />}
+    {openModal && <Dialogo closeModal={setOpenModal} datos={props.datos} actualizar={actualizarItem}/>}
     </>
   )
 }

@@ -65,9 +65,32 @@ export function useVideoContext() {
 
     };
 
-    function editVideo() {
+    async function editVideo(item) {
         console.log("metodo para EDITAR videos");
-        console.log(listaVideo);
+
+        try{
+            const response = await fetch(`http://localhost:3000/videos/${item.id}`,{
+                method:'PUT',
+                headers:{
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    id: item.id,
+                    titulo: item.titulo,
+                    categoria: item.categoria,
+                    image: item.imagen,
+                    video: item.imagen,
+                    descripcion: item.descripcion
+                }),
+            });
+            if(response.ok){
+                const result = await response.json();
+                console.log("Se realizo el update "+result);
+                setDuplicado(duplicado.map(i=>(i.id === item.id ? result : i)));
+            }
+        }catch(err){
+            console.log("Error en update. Contexto. "+err);
+        }
     }
 
     async function deleteVideo(id) {
