@@ -9,10 +9,10 @@
 
 .card{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap:2em;
     margin-top: 2em;
-    /* overflow-x:scroll; */
+    overflow-x:scroll;
     padding-bottom: 1em;
 }
 
@@ -31,9 +31,9 @@
     .cards{
         text-align: center;
     }
-    .card{
+    /* .card{
         justify-content: center;
-    }
+    } */
 }
 
 @media (max-width: 926px){
