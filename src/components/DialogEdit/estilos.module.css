@@ -1,5 +1,6 @@
 .overlay {
-    background-color: rgba(0, 0, 0, .4);
+    /* background-color: rgba(0, 0, 0, .4); */
+    background-color: rgba(21, 48, 88, .5);
     position: fixed;
     top: 0;
     left: 0;
@@ -11,8 +12,9 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    padding: 2.5em 3em;
-    background: white;
+    padding: 2em 3em;
+    background: #153058;
+    color: white;
     border-radius: 20px;
     top: 50vh;
     left: 0;
@@ -20,30 +22,35 @@
     margin: auto;
     width: max-content;
     height: max-content;
+    border: 2px solid #2373d2;
+}
+
+h1{
+    color: #2373d2;
 }
 
 .dialogo i {
-    /* border:2px solid red; */
     text-align: end;
-    font-size: 2em;
+    font-size: 1.5em;
     cursor: pointer;
 }
 
 .input__text{
-    border:2px solid black;
     display: flex;
     flex-direction: column;
 }
 
 .formulario{
     display: grid;
-    grid-template-areas: 'titulo categoria'
-                         'imagen video'
-                         'descripcion .'
-                         'btns .';
+    grid-template-areas: 'titulo' 
+                         'categoria'
+                         'imagen' 
+                         'video'
+                         'descripcion'
+                         'btns';
 
-    gap: 2.5em;
-    margin-top: 2em;
+    gap: .5em;
+    margin-top: 1em;
 }
 
 #input__titulo{ grid-area: titulo;}
@@ -57,7 +64,7 @@
     flex-direction: row;
     gap: 2em;
     width: max-content;
-    border: 2px solid red;
+    margin-top: 1em;
 }
 
 #input__btns input{
@@ -68,6 +75,8 @@
 input[type=text], select{
     padding: .5em;
     border-radius: 8px;
+    background: #153058;
+    border: 2px solid #2373d2;
 }
 
 label{
@@ -77,4 +86,19 @@ label{
 textarea{
     border-radius: 8px;
     padding: .5em;
+    background: #153058;
+    border:2px solid #2373d2;
+}
+
+#btnGuardar{
+    background: #0c0f12;
+    color: #2373d2;
+    border: 2px solid #2373d2;
+    color:white;
+}
+
+#btnLimpiar{
+    background: transparent;
+    border: 2px solid white;
+    color: white;
 }

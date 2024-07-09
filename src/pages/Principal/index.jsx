@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react'
 
 import Cards from '../Cards';
+import Header from '../../components/Header';
 import estilos from './estilos.module.css';
 import { useVideoContext } from '../../context/VideosContexto';
-import Dialogo from '../../components/DialogEdit';
+
+
 export default function index() {
 
     const [equipos, actualizarEquipos] = useState([
@@ -27,17 +29,20 @@ export default function index() {
     const { listaVideo, setListaVideo } = useVideoContext();
 
     return (
-        <div className={estilos.contenedorCards}>{
-            equipos.map((equipo) => {
-                return (
-                    <Cards
-                        datos={equipo}
-                        key={equipo.titulo}
-                        videos={listaVideo.filter(video => video.categoria === equipo.titulo)}
-                    />
+        <>
+            <Header />
+            <div className={estilos.contenedorCards}>{
+                equipos.map((equipo) => {
+                    return (
+                        <Cards
+                            datos={equipo}
+                            key={equipo.titulo}
+                            videos={listaVideo.filter(video => video.categoria === equipo.titulo)}
+                        />
 
-                )
-            })
-        }</div>
+                    )
+                })
+            }</div>
+        </>
     )
 }

@@ -49,12 +49,34 @@
       "descripcion": "ksjdnaksfmalsgkma"
     },
     {
-      "id": "0.5724668151473813",
-      "titulo": "nueov",
+      "id": "0.3029630176534419",
+      "categoria": "backend",
+      "image": "https://i.ibb.co/QbFdRMD/girl-perfil.png",
+      "video": "https://i.ibb.co/QbFdRMD/girl-perfil.png"
+    },
+    {
+      "id": "0.9481732440382993",
+      "categoria": "innovacion",
+      "image": "https://i.ibb.co/QbFdRMD/girl-perfil.png",
+      "video": "https://i.ibb.co/QbFdRMD/girl-perfil.png"
+    },
+    {
+      "id": "0.3967611615807749",
       "categoria": "frontend",
-      "image": "https://i.ibb.co/GHzwtL8/img2.png",
-      "video": "https://i.ibb.co/GHzwtL8/img2.png",
-      "descripcion": "el sirviente del mal"
+      "image": "https://i.ibb.co/QbFdRMD/girl-perfil.png",
+      "video": "https://i.ibb.co/QbFdRMD/girl-perfil.png"
+    },
+    {
+      "id": "0.6013347568624692",
+      "categoria": "frontend",
+      "image": "https://i.ibb.co/QbFdRMD/girl-perfil.png",
+      "video": "https://i.ibb.co/QbFdRMD/girl-perfil.png"
+    },
+    {
+      "id": "0.5570027520229546",
+      "categoria": "frontend",
+      "image": "https://i.ibb.co/QbFdRMD/girl-perfil.png",
+      "video": "https://i.ibb.co/QbFdRMD/girl-perfil.png"
     }
   ]
 }

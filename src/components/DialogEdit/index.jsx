@@ -85,8 +85,8 @@ export default function index(props) {
                     </div>
 
                     <div className={estilos.input__text} id={estilos.input__btns}>
-                        <input type="button" onClick={enviar} value="GUARDAR"/>
-                        <input type="button" value="LIMPIAR" />
+                        <input id={estilos.btnGuardar} type="button" onClick={enviar} value="GUARDAR"/>
+                        <input id={estilos.btnLimpiar} type="button" value="LIMPIAR" />
                     </div>
                 </form>
             </div>

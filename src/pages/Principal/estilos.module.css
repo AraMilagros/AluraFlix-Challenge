@@ -1,5 +1,6 @@
 .contenedorCards{
     display: flex;
     flex-direction: column;
+    background: #070808;
     /* flex-wrap: wrap; */
 }

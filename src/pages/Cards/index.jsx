@@ -20,6 +20,7 @@ export default function index(props) {
                 image={item.image}
                 urlVideo={item.url}
                 datos={item}
+                color={color}
               />
             )
           })

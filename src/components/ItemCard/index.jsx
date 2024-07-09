@@ -17,12 +17,12 @@ export default function index(props) {
 
   return (
     <>
-      <div className={estilos.container}>
+      <div className={estilos.container} style={{border: `3px solid ${props.color}`}}>
       <div className={estilos.images}>
         {/* <img src={images(`./${props.image}`)} alt='image.logo' /> */}
         <img src={props.image} alt='image.logo' />
       </div>
-      <div className={estilos.btns}>
+      <div className={estilos.btns} style={{borderTop: `3px solid ${props.color}`}}>
         <a className={estilos.btn}
           onClick={()=>deleteVideo(props.id)}>
           <i className="fa-solid fa-trash"></i>

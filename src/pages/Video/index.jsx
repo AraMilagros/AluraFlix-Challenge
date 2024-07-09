@@ -79,8 +79,8 @@ export default function index() {
                 </div>
 
                 <div className={estilos.input__text} id={estilos.input__btns}>
-                    <input type="submit" value="GUARDAR"/>
-                    <input type="button" value="LIMPIAR" />
+                    <input id={estilos.btnGuardar} type="submit" value="GUARDAR"/>
+                    <input id={estilos.btnLimpiar} type="button" value="LIMPIAR" />
                 </div>
             </form>
 

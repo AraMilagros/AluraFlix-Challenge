@@ -10,7 +10,6 @@ export default function AppRoutes(){
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={ <PaginaBase/> }>
-                    {/* aqui iran las demas paginas */}
                     <Route path="" element={ <Principal /> }/>
                     <Route path="newVideo" element={ <Video/> } />
                     <Route path='*' element={ <NotFound/> } />
