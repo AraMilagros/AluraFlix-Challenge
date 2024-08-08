@@ -4,7 +4,7 @@ import Cards from '../Cards';
 import Header from '../../components/Header';
 import estilos from './estilos.module.css';
 import { useVideoContext } from '../../context/VideosContexto';
-
+import SinDatos from '../SinDatos';
 
 export default function index() {
 
@@ -25,24 +25,34 @@ export default function index() {
             color: "#f2b308"
         }
     ]);
-    const [bandera, setBandera] = useState(false);
+    // const [bandera, setBandera] = useState(false);
     const { listaVideo, setListaVideo } = useVideoContext();
 
     return (
         <>
             <Header />
-            <div className={estilos.contenedorCards}>{
-                equipos.map((equipo) => {
-                    return (
-                        <Cards
-                            datos={equipo}
-                            key={equipo.titulo}
-                            videos={listaVideo.filter(video => video.categoria === equipo.titulo)}
-                        />
+            {
+                listaVideo === null ? <div className={estilos.contenedorSinDatos}>
+                    <SinDatos />
+                </div>
+                    : <></>
+            }
+            {
+                listaVideo != null ? <div className={estilos.contenedorCards}>{
+                    equipos.map((equipo) => {
+                        return (
+                            <Cards
+                                datos={equipo}
+                                key={equipo.titulo}
+                                videos={listaVideo.filter(video => video.categoria === equipo.titulo)}
+                            />
 
-                    )
-                })
-            }</div>
+                        )
+                    })
+                }</div>
+                    :
+                    <></>
+            }
         </>
     )
 }

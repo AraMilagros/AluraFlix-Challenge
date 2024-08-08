@@ -24,22 +24,22 @@ export default function index() {
                 descripcion: descripcion
             });
             limpiar();
+            alert('Nueva tarjeta creada !');
         } else {
             console.log("falta elegir categoria");
-            selec.style.border=`2px solid red`;
-            selec.style.color='red';
+            selec.style.border = `2px solid red`;
+            selec.style.color = 'red';
         }
-        
+
     }
 
 
     useEffect(() => {
         const select = document.getElementById('categoria');
         select.addEventListener('change', () => {
-            console.log(select.value)
             setCategoria(select.value);
-            select.style.border=`2px solid white`;
-            select.style.color='white';
+            select.style.border = `2px solid white`;
+            select.style.color = 'white';
         })
 
     }, []);
@@ -50,18 +50,18 @@ export default function index() {
         setImagen('');
         setVideo('');
         setDescripcion('');
-        
+
         const inputs = document.querySelectorAll('.input_text');
-        
+
         for (let index = 0; index < inputs.length; index++) {
             console.log(inputs[index].value);
-            inputs[index].value='';
+            inputs[index].value = '';
         }
         const selec = document.getElementById('categoria');
-        selec.value="seleccion";
-        
+        selec.value = "seleccion";
+
     }
-    
+
     return (
         <div className={estilos.container}>
 
@@ -108,7 +108,7 @@ export default function index() {
 
                 <div className={estilos.input__text} id={estilos.input__btns}>
                     <input id={estilos.btnGuardar} type="submit" value="GUARDAR" />
-                    <input id={estilos.btnLimpiar} type="button" value="LIMPIAR" />
+                    {/* <input id={estilos.btnLimpiar} type="button" value="LIMPIAR" /> */}
                 </div>
             </form>
 

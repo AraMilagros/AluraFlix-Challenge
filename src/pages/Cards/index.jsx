@@ -15,7 +15,7 @@ export default function index(props) {
           props.videos.map((item) => {
             return (
               <ItemCard key={item.id}
-                id={item.id}
+                id={item._id}
                 categoria={props.datos.titulo}
                 imagen={item.imagen}
                 urlVideo={item.video}

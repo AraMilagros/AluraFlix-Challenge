@@ -12,35 +12,35 @@ export default function index(props) {
     useEffect(() => {
         let selec = document.getElementById('categoria');
         selec.value = props.datos.categoria;
-    },[])
+    }, [])
 
-    useEffect(()=>{
+    useEffect(() => {
         const select = document.getElementById('categoria');
-        select.addEventListener('change', ()=>{
+        select.addEventListener('change', () => {
             // console.log(select.value)
             setCategoria(select.value);
-            select.style.border=`2px solid white`;
-            select.style.color='white';
+            select.style.border = `2px solid white`;
+            select.style.color = 'white';
         })
-        
-    },[]);
+
+    }, []);
 
     const enviar = () => {
 
         const selec = document.getElementById('categoria');
         if (selec.value !== 'seleccion') {
             props.actualizar({
-                id: props.datos.id,
+                id: props.datos._id,
                 titulo: titulo,
                 categoria: categoria,
                 imagen: imagen,
-                video: video,
+                video: video, 
                 descripcion: descripcion
             });
         } else {
             console.log("falta elegir categoria");
-            selec.style.border=`2px solid red`;
-            selec.style.color='red';
+            selec.style.border = `2px solid red`; 
+            selec.style.color = 'red';
         }
     }
 
@@ -61,7 +61,7 @@ export default function index(props) {
                     </div>
 
                     <div className={estilos.input__text} id={estilos.input__categoria}>
-                       <label>Categoría</label>
+                        <label>Categoría</label>
                         <select name="categoria" id="categoria">
                             <option id="seleccion" value="seleccion">Seleccione una categoria</option>
                             <option id="frontend" value="frontend">Frontend</option>
@@ -93,8 +93,8 @@ export default function index(props) {
                     </div>
 
                     <div className={estilos.input__text} id={estilos.input__btns}>
-                        <input id={estilos.btnGuardar} type="button" onClick={enviar} value="GUARDAR"/>
-                        <input id={estilos.btnLimpiar} type="button" value="LIMPIAR" />
+                        <input id={estilos.btnGuardar} type="button" onClick={enviar} value="GUARDAR" />
+                        {/* <input id={estilos.btnLimpiar} type="button" value="LIMPIAR" /> */}
                     </div>
                 </form>
             </div>

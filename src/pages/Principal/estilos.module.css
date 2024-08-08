@@ -4,3 +4,11 @@
     background: #070808;
     /* flex-wrap: wrap; */
 }
+
+.contenedorSinDatos{
+    background: #070808;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
