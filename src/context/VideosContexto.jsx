@@ -66,6 +66,7 @@ export function useVideoContext() {
             });            
             const conexConvertida = await conex.json();
             actualizarListado(conexConvertida);
+            alert('Se creo una nueva tarjeta');
         } catch (err) {
             console.log("error en crear nuevo video " + err)
             // console.log(err.data)
@@ -94,6 +95,7 @@ export function useVideoContext() {
                 const result = await response.json();
                 console.log("Se realizo el update " + result);
                 setDuplicado(duplicado.map(i => (i._id === item.id ? result : i)));
+                alert('Se modificó la tarjeta');
             }
         } catch (err) {
             console.log("Error en update. Contexto. " + err);
@@ -110,6 +112,7 @@ export function useVideoContext() {
                 const actualizar = duplicado.filter((item) => item._id !== id);
                 setDuplicado(actualizar);
                 console.log("se borro")
+                alert('Se eliminó la tarjeta');
             } else {
                 console.log("NOSE BORRA")
             }

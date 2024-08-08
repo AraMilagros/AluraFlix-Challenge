@@ -24,7 +24,6 @@ export default function index() {
                 descripcion: descripcion
             });
             limpiar();
-            alert('Nueva tarjeta creada !');
         } else {
             console.log("falta elegir categoria");
             selec.style.border = `2px solid red`;
